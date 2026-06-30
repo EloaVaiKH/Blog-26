@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>There is a Light That Never Goes Out | O Legado do The Smiths</title>
+    <style>
+        /* Variáveis de Cores (Paleta Verde-Musgo/Indie) */
+        :root {
+            --musgo-escuro: #2D3A26;
+            --musgo-medio: #4A5D45;
+            --musgo-claro: #A3B19B;
+            --creme: #F4F6F0;
+            --texto-escuro: #222222;
+        }
+
+        /* Configurações Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--creme);
+            color: var(--texto-escuro);
+            line-height: 1.6;
+        }
+
+        /* Estilo para todas as imagens do blog */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem auto; /* Centraliza a imagem e dá espaço */
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Imagem da Barra Lateral */
+        aside img {
+            border: 2px solid var(--musgo-claro);
+            margin: 0 0 1.5rem 0;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--musgo-escuro);
+            color: var(--creme);
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--musgo-claro);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--musgo-claro);
+        }
+
+        /* Menu de Navegação */
+        nav {
+            background-color: var(--musgo-medio);
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            display: inline-block;
+            color: var(--creme);
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--musgo-escuro);
+        }
+
+        /* Layout Principal */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        /* Posts e Conteúdo */
+        article {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 6px solid var(--musgo-medio);
+        }
+
+        article h2 {
+            color: var(--musgo-escuro);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .meta-info {
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Citação estilizada (Frase de música) */
+        blockquote {
+            background-color: var(--creme);
+            border-left: 4px solid var(--musgo-claro);
+            margin: 1.5rem 0;
+            padding: 1rem;
+            font-style: italic;
+            color: var(--musgo-escuro);
+        }
+
+        /* Barra Lateral (Sidebar) */
+        aside {
+            background-color: var(--musgo-escuro);
+            color: var(--creme);
+            padding: 2rem;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        aside h3 {
+            border-bottom: 2px solid var(--musgo-claro);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        aside ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        aside li {
+            margin-bottom: 0.8rem;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--musgo-escuro);
+            color: var(--creme);
+            text-align: center;
+            padding: 1.5rem;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            margin-top: 4rem;
+        }
+
+        /* Responsividade para celular */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho do Blog -->
+    <header>
+        <h1>THE SMITHS</h1>
+        <p>A melancolia, as guitarras de Johnny Marr e a poesia de Morrissey</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <a href="#biografia">Biografia</a>
+        <a href="#discografia">Álbuns Marcantes</a>
+        <a href="#letras">Letras e Poesia</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        
+        <!-- Área dos Posts -->
+        <main>
+            <article id="biografia">
+                <h2>Os Anos de Manchester (1982 – 1987)</h2>
+                <div class="meta-info">Postado por Eloá Vitória Figueiredo de Oliveira</div>
+                
+                <!-- IMAGEM 1: Foto clássica da banda -->
+                <img src="https://media.discordapp.net/attachments/1482560311704817877/1521569804853575733/fd908d11bc31473658e520f6b5558c70.jpg?ex=6a454fce&is=6a43fe4e&hm=5fa63d829e27de195e934a747da88029c19a7e1858bf133e61229e78b8285faa&=&format=webp" alt="Foto clássica do The Smiths em Manchester">
+                
+                <p>Formada em Manchester em 1982, The Smiths é amplamente considerada uma das bandas mais importantes do rock alternativo britânico. Composta por Morrissey (vocais), Johnny Marr (guitarras), Andy Rourke (baixo) e Mike Joyce (bateria), o grupo redefiniu a música dos anos 80 longe dos sintetizadores que dominavam a época.</p>
+                <blockquote>
+                    "To die by your side is such a heavenly way to die..."
+                </blockquote>
+                <p>O som icônico vinha da química perfeita entre as letras ácidas e melancólicas de Morrissey e os arranjos de guitarra brilhantes e cheios de texturas de Johnny Marr. Mesmo com uma carreira curta, a banda deixou um legado eterno.</p>
+            </article>
+
+            <article id="discografia">
+                <h2>The Queen Is Dead (1986)</h2>
+                <div class="meta-info">Análise de Álbum</div>
+
+                <!-- IMAGEM 2: Capa do álbum The Queen Is Dead -->
+                <img src="https://media.discordapp.net/attachments/1482560311704817877/1521569805138923590/21154446c3315a18ea44590059e9e11b.jpg?ex=6a454fce&is=6a43fe4e&hm=8e216d099200ca656ab43f1f2e0495a39efdf59cde3b90f1be7ea6f616bf8f21&=&format=webp&width=590&height=590" alt="Capa do álbum The Queen Is Dead">
+
+                <p>O terceiro álbum de estúdio da banda é frequentemente citado como sua grande obra-prima. Misturando críticas sociais à monarquia britânica, canções de amor desesperadas e um humor muito britânico, o disco equilibra momentos de pura energia rock com baladas densas.</p>
+                <p>Destaques para faixas como "There Is a Light That Never Goes Out", "Bigmouth Strikes Again" e a faixa-título que abre o álbum com um soco no estômago do establishment.</p>
+            </article>
+        </main>
+
+        <!-- Barra Lateral -->
+        <aside>
+            <!-- IMAGEM 3: Imagem vertical ou logo da banda na sidebar -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/The_Smiths_%28Logo%29.png" alt="Logo vertical do The Smiths">
+
+            <h3>Integrantes</h3>
+            <ul>
+                <li><strong>Morrissey</strong> – Vocais</li>
+                <li><strong>Johnny Marr</strong> – Guitarras</li>
+                <li><strong>Andy Rourke</strong> – Baixo</li>
+                <li><strong>Mike Joyce</strong> – Bateria</li>
+            </ul>
+            <br>
+            <h3>Discografia Essencial</h3>
+            <ul>
+                <li>• The Smiths (1984)</li>
+                <li>• Meat Is Murder (1985)</li>
+                <li>• The Queen Is Dead (1986)</li>
+                <li>• Strangeways, Here We Come (1987)</li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2026 - Trabalho Escolar sobre The Smiths. Desenvolvido com muito bom gosto.</p>
+    </footer>
+
+</body>
+</html>
